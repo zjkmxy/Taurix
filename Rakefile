@@ -10,7 +10,7 @@ bochsrc = File.join(top_dir, "img/bochsrc.bxrc")
 
 task :build do |t| 
     rake_dirs.each do |dir|
-        system "cd #{dir}&rake build"
+        system "cd #{dir} && rake build"
     end
     Rake::Task['img/TaurixSetup.img'].invoke
     #Rake::Task['TaurixOS.img'].invoke
@@ -18,7 +18,7 @@ end
 
 task :clean do |t|
     rake_dirs.each do |dir|
-        system "cd #{dir}&rake clean"
+        system "cd #{dir} && rake clean"
     end
     system "del .\\bin\\*.img"
 end
