@@ -1,4 +1,10 @@
-/toolchain
-*.bin
-*.elf
+taurix-settings-final.json
+Taurix
+Taurix.img
+Makefile
+QemuRun.sh
+QemuRun.rb
+QemuDebug.sh
+QemuDebug.rb
 *.o
+toolchain
